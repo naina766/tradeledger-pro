@@ -197,3 +197,51 @@
 {"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui.css \u001b[32m200\u001b[0m 11.364 ms - 178977\u001b[0m","timestamp":"2026-06-04 01:08:22"}
 {"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui-standalone-preset.js \u001b[32m200\u001b[0m 7.703 ms - 251800\u001b[0m","timestamp":"2026-06-04 01:08:22"}
 {"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui-bundle.js \u001b[32m200\u001b[0m 11.237 ms - 1526593\u001b[0m","timestamp":"2026-06-04 01:08:22"}
+{"level":"debug","message":"Prisma SQL: BEGIN | Params: [] | Duration: 299ms","timestamp":"2026-06-04 01:09:53"}
+{"level":"debug","message":"Prisma SQL: DEALLOCATE ALL | Params: [] | Duration: 289ms","timestamp":"2026-06-04 01:09:53"}
+{"level":"debug","message":"Prisma SQL: SELECT 1 | Params: [] | Duration: 753ms","timestamp":"2026-06-04 01:09:54"}
+{"level":"debug","message":"Prisma SQL: COMMIT | Params: [] | Duration: 297ms","timestamp":"2026-06-04 01:09:54"}
+{"level":"info","message":"Database connection established successfully with Neon PostgreSQL via Prisma Client","timestamp":"2026-06-04 01:09:54"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 01:09:54"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 01:09:54"}
+{"level":"info","message":"\u001b[0mGET /api-docs/ \u001b[36m304\u001b[0m 13.930 ms - -\u001b[0m","timestamp":"2026-06-04 01:10:28"}
+{"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui.css \u001b[36m304\u001b[0m 6.540 ms - -\u001b[0m","timestamp":"2026-06-04 01:10:28"}
+{"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui-bundle.js \u001b[36m304\u001b[0m 7.303 ms - -\u001b[0m","timestamp":"2026-06-04 01:10:28"}
+{"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui-standalone-preset.js \u001b[36m304\u001b[0m 2.010 ms - -\u001b[0m","timestamp":"2026-06-04 01:10:28"}
+{"level":"info","message":"\u001b[0mGET /api-docs/swagger-ui-init.js \u001b[32m200\u001b[0m 1.245 ms - 22292\u001b[0m","timestamp":"2026-06-04 01:10:28"}
+{"level":"info","message":"\u001b[0mGET /api-docs/favicon-32x32.png \u001b[32m200\u001b[0m 3.639 ms - 628\u001b[0m","timestamp":"2026-06-04 01:10:28"}
+{"level":"debug","message":"Prisma SQL: BEGIN | Params: [] | Duration: 414ms","timestamp":"2026-06-04 01:44:05"}
+{"level":"error","message":"Failed to establish database connection check: PrismaClientInitializationError: \nInvalid `prisma.$queryRaw()` invocation:\n\n\nCan't reach database server at `ep-solitary-rice-aq0qause-pooler.c-8.us-east-1.aws.neon.tech:5432`\n\nPlease make sure your database server is running at `ep-solitary-rice-aq0qause-pooler.c-8.us-east-1.aws.neon.tech:5432`.\n    at $n.handleRequestError (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:121:7615)\n    at $n.handleAndLogRequestError (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:121:6623)\n    at $n.request (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:121:6307)\n    at async l (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:130:9633)\n    at async initializeDatabase (D:\\Assignment\\trade\\backend\\src\\config\\db.js:21:5)\n    at async startServer (D:\\Assignment\\trade\\backend\\src\\app.js:62:3) {\n  [stack]: [Getter/Setter],\n  [message]: '\\n' +\n    'Invalid `prisma.$queryRaw()` invocation:\\n' +\n    '\\n' +\n    '\\n' +\n    \"Can't reach database server at `ep-solitary-rice-aq0qause-pooler.c-8.us-east-1.aws.neon.tech:5432`\\n\" +\n    '\\n' +\n    'Please make sure your database server is running at `ep-solitary-rice-aq0qause-pooler.c-8.us-east-1.aws.neon.tech:5432`.',\n  name: 'PrismaClientInitializationError',\n  clientVersion: '5.22.0',\n  errorCode: undefined,\n  [Symbol(Symbol.toStringTag)]: [Getter]\n}","timestamp":"2026-06-04 12:50:09"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 12:50:09"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 12:50:09"}
+{"level":"debug","message":"Prisma SQL: BEGIN | Params: [] | Duration: 278ms","timestamp":"2026-06-04 13:00:54"}
+{"level":"debug","message":"Prisma SQL: DEALLOCATE ALL | Params: [] | Duration: 301ms","timestamp":"2026-06-04 13:00:55"}
+{"level":"debug","message":"Prisma SQL: SELECT 1 | Params: [] | Duration: 570ms","timestamp":"2026-06-04 13:00:55"}
+{"level":"debug","message":"Prisma SQL: COMMIT | Params: [] | Duration: 285ms","timestamp":"2026-06-04 13:00:56"}
+{"level":"info","message":"Database connection established successfully with Neon PostgreSQL via Prisma Client","timestamp":"2026-06-04 13:00:56"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 13:00:56"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 13:00:56"}
+{"level":"debug","message":"Prisma SQL: BEGIN | Params: [] | Duration: 313ms","timestamp":"2026-06-04 13:01:39"}
+{"level":"debug","message":"Prisma SQL: DEALLOCATE ALL | Params: [] | Duration: 316ms","timestamp":"2026-06-04 13:01:39"}
+{"level":"debug","message":"Prisma SQL: SELECT 1 | Params: [] | Duration: 596ms","timestamp":"2026-06-04 13:01:40"}
+{"level":"debug","message":"Prisma SQL: COMMIT | Params: [] | Duration: 361ms","timestamp":"2026-06-04 13:01:40"}
+{"level":"info","message":"Database connection established successfully with Neon PostgreSQL via Prisma Client","timestamp":"2026-06-04 13:01:40"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 13:01:40"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 13:01:40"}
+{"level":"debug","message":"Prisma SQL: BEGIN | Params: [] | Duration: 342ms","timestamp":"2026-06-04 13:01:46"}
+{"level":"debug","message":"Prisma SQL: DEALLOCATE ALL | Params: [] | Duration: 403ms","timestamp":"2026-06-04 13:01:46"}
+{"level":"debug","message":"Prisma SQL: SELECT 1 | Params: [] | Duration: 727ms","timestamp":"2026-06-04 13:01:47"}
+{"level":"debug","message":"Prisma SQL: COMMIT | Params: [] | Duration: 398ms","timestamp":"2026-06-04 13:01:47"}
+{"level":"info","message":"Database connection established successfully with Neon PostgreSQL via Prisma Client","timestamp":"2026-06-04 13:01:47"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 13:01:47"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 13:01:47"}
+{"level":"debug","message":"Prisma SQL: BEGIN | Params: [] | Duration: 316ms","timestamp":"2026-06-04 13:02:10"}
+{"level":"debug","message":"Prisma SQL: DEALLOCATE ALL | Params: [] | Duration: 309ms","timestamp":"2026-06-04 13:02:11"}
+{"level":"debug","message":"Prisma SQL: SELECT 1 | Params: [] | Duration: 734ms","timestamp":"2026-06-04 13:02:11"}
+{"level":"debug","message":"Prisma SQL: COMMIT | Params: [] | Duration: 388ms","timestamp":"2026-06-04 13:02:12"}
+{"level":"info","message":"Database connection established successfully with Neon PostgreSQL via Prisma Client","timestamp":"2026-06-04 13:02:12"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 13:02:12"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 13:02:12"}
+{"level":"error","message":"Failed to establish database connection check: TypeError: Cannot read properties of undefined (reading 'bind')\n    at Gr.wrapEngine (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:111:11959)\n    at Gr.loadEngine (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:112:749)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async Gr.instantiateLibrary (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:111:13196)\n    at async Gr.start (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:112:2060)\n    at async Gr.request (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:112:3804)\n    at async Object.singleLoader (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:121:5886)\n    at async Zn.request (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:121:6378)\n    at async l (D:\\Assignment\\trade\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:130:9778)\n    at async initializeDatabase (D:\\Assignment\\trade\\backend\\src\\config\\db.js:21:5) {\n  [stack]: [Getter/Setter],\n  [message]: \"Cannot read properties of undefined (reading 'bind')\",\n  clientVersion: '5.22.0'\n}","timestamp":"2026-06-04 13:04:43"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-06-04 13:04:43"}
+{"level":"info","message":"API Docs available at http://localhost:5000/api-docs","timestamp":"2026-06-04 13:04:43"}
