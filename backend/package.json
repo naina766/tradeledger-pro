@@ -4,8 +4,9 @@
   "description": "Production-ready backend API for TradeLedger Pro (Prisma + Neon)",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "npx prisma db push && node src/app.js",
     "dev": "nodemon src/app.js",
+    "build": "npx prisma generate",
     "prisma:generate": "npx prisma generate",
     "prisma:push": "npx prisma db push"
   },
