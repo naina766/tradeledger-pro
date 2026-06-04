@@ -74,9 +74,8 @@ Prisma ORM handles migrations, enums, relationship checks, and composite index c
 
 ```prisma
 datasource db {
-  provider  = "postgresql"
-  url       = env("DATABASE_URL")
-  directUrl = env("DIRECT_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 generator client {
@@ -174,7 +173,7 @@ To handle system scaling in production, the following practices are recommended:
    - Invalidate or refresh the cache whenever a user creates, updates, or deletes a trade.
    - Implement Redis for API rate limiting to keep tracking states clean across cluster endpoints.
 3. **Database Scaling & Neon Features**:
-   - **Connection Pooling**: Neon provides a built-in PgBouncer pooler. The application connects to it via the pooled `DATABASE_URL` (using `-pooler.neon.tech`), while running direct migrations via `DIRECT_URL`. This guarantees the serverless application does not saturate DB connection limits.
+   - **Connection Pooling**: Neon provides a built-in PgBouncer pooler. The application connects to it via the pooled `DATABASE_URL` (using `-pooler.neon.tech` with `&pgbouncer=true`). This guarantees that the serverless application does not saturate DB connection limits, while we use `npx prisma db push` to handle schema updates directly.
    - **Database Branching**: Run developer branching models via Neon's console command hooks. Staging database branches copy schema templates instantly, enabling zero-impact schema changes.
 4. **CI/CD Pipelines**:
    - Establish GitHub Actions to run test suites on push events.
@@ -213,7 +212,7 @@ This runs the database and backend automatically in unified networking container
 
 #### 2. Backend API Setup
 1. Navigate to `/backend`.
-2. Copy `.env.example` to `.env` and fill in your connection details (both `DATABASE_URL` and `DIRECT_URL`):
+2. Copy `.env.example` to `.env` and fill in your connection details:
    ```bash
    cp .env.example .env
    ```
